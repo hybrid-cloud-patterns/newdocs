@@ -1,9 +1,11 @@
+:_content-type: CONCEPT
 [id="contributing-to-docs-doc-guidelines"]
 = Documentation guidelines
 
 :description: Documentation guidelines for contributing to the Hybrid Cloud Patterns Docs
 :imagesdir: ../images
 
+[id="general-guidelines"]
 == General guidelines
 When authoring content, follow these style guides:
 
@@ -14,6 +16,7 @@ NOTE: When asked for an IBMid, Red Hat associates can use their Red Hat e-mail.
 * link:https://redhat-documentation.github.io/modular-docs/#writing-mod-docs[Modular documentation reference guide]
 ** link:https://github.com/redhat-documentation/modular-docs/tree/main/modular-docs-manual/files[Modular documentation templates]
 
+[id="modular-documentation-terms"]
 == Modular documentation terms
 
 [options="header"]
@@ -35,7 +38,7 @@ NOTE: When asked for an IBMid, Red Hat associates can use their Red Hat e-mail.
 
 |===
 
-
+[id="naming-conventions-for-assembly-module-files]
 == Naming conventions for assembly and module files
 Use lowercase separated by dash. Create assembly and module file names that accurately and closely reflect the title of the assembly or module.
 
@@ -45,6 +48,7 @@ Use lowercase separated by dash. Create assembly and module file names that accu
 * `creating-guided-decision-tables.adoc`` (Procedure module for creating)
 * `guided-decision-table-examples.adoc` (Reference module with examples)
 
+[id="content-type-attributes"]
 === Content type attributes
 
 Each `.adoc` file must contain a `:_content-type:` attribute in its metadata that indicates its file type. This information is used by some publication processes to sort and label files.
@@ -58,11 +62,14 @@ Add the attribute from the following list that corresponds to your file type:
 
 See, xref:doc_guidelines.adoc#assembly-file-metadata[Assembly file metadata] and xref:doc_guidelines.adoc#module-file-metadata[Module file metadata].
 
+[id="naming-conventions-for-directories"]
 == Naming conventions for directories
 
 Use lowercase. For directory with a multiple-word name, use lowercase separated by dash, for example `multicloud-gitops`.
 
+[id="language-and-grammar"]
 == Language and grammar
+
 Consider the following guidelines:
 * Use present tense.
 * Use active voice.
@@ -72,7 +79,9 @@ Consider the following guidelines:
 * Use the appropriate tone.
 * Write for a global audience.
 
+[id="titles-and-headings"]
 == Titles and headings
+
 Use sentence-style capitalization in all titles and section headings. Ensure that titles focus on customer tasks instead of the product.
 
 For assemblies and procedure modules, use a gerund form in headings, such as:
@@ -98,7 +107,7 @@ For modules that do not include any procedure, use a noun phrase, for example _R
 //[id="managing-authorization-policies_{context}"]
 //== Managing authorization policies
 //----
-
+[id="writing-assemblies"]
 == Writing assemblies
 
 For more information about forming assemblies, see the
@@ -128,7 +137,7 @@ include::_common-docs/common-attributes.adoc[]                   <4>
 
 After the heading block and a single whitespace line, you can include any content for this assembly.
 
-
+[id="writing-modules"]
 == Writing modules
 For more information about creating modules, see the https://redhat-documentation.github.io/modular-docs/#_creating_modules[Red Hat Modular documentation reference guide].
 
@@ -187,6 +196,7 @@ rh-rhacm-product: Red Hat Advanced Cluster Management (RHACM)
 
 For more information on attributes, see link: https://docs.asciidoctor.org/asciidoc/latest/key-concepts/#attributes.
 
+[id="formatting"]
 == Formatting
 Use the following links to refer to AsciiDoc markup and syntax.
 
@@ -196,6 +206,7 @@ Use the following links to refer to AsciiDoc markup and syntax.
 
 If you are graduating to AsciiDoc from Markdown, see the https://docs.asciidoctor.org/asciidoc/latest/asciidoc-vs-markdown/#comparison-by-example[AsciiDoc to Markdown syntax comparison by example].
 
+[id="formatting-commands-code-blocks"]
 === Formatting commands and code blocks
 To enable syntax highlighting, use `[source,terminal]` for any terminal commands, such as `oc` commands and their outputs. For example:
 ....
