@@ -1,14 +1,16 @@
+:_content-type: CONCEPT
 [id="contributing-to-docs-tools-and-setup"]
 = Install and set up the tools and software
 :icons:
 :linkattrs:
 :description: How to set up and install the tools to contribute
 
-
+[id="create-github-account"]
 == Create a GitHub account
 Before you can contribute to Hybrid Cloud Patterns documentation, you must
 https://www.github.com/join[sign up for a GitHub account].
 
+[id="set-up-authentication"]
 == Set up authentication
 When you have your account set up, follow the instructions to
 https://help.github.com/articles/generating-ssh-keys/[generate and set up SSH
@@ -19,7 +21,7 @@ Confirm authentication is working correctly with the following command:
 ----
 $ ssh -T git@github.com
 ----
-
+[id="fork-and-clone-docs-repo"]
 == Fork and clone the Hybrid Cloud Patterns documentation repository
 You must fork and set up the Hybrid Cloud Patterns documentation repository on your workstation so that you can create PRs and contribute. These steps must only be performed during initial setup.
 
@@ -52,10 +54,14 @@ $ git remote add upstream git@github.com:hybrid-cloud-patterns/docs.git
 This ensures that you are tracking the remote repository to keep your local
 repository in sync with it.
 
+[id="install-asciidoctor"]
 == Install Asciidoctor
+
 The Hybrid Cloud Patterns documentation is created in AsciiDoc language, and is processed with http://asciidoctor.org/[AsciiDoctor], which is an AsciiDoc language processor.
 
+[id="prerequisites"]
 === Prerequisites
+
 The following are minimum requirements:
 
 * A bash shell environment (Linux and OS X include a bash shell environment)
